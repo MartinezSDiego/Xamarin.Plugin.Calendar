@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Xamarin.Forms;
+using Xamarin.Plugin.Calendar.Shared.Models;
 
 namespace Xamarin.Plugin.Calendar.Models
 {
     /// <summary> 
-    /// Calendar events collection, wraps <see cref="Dictionary{DateTime, ICollection}" />
+    /// Calendar events collection, wraps <see cref="Dictionary{DateTime, DayEventCollection}" />
     /// </summary>
-    public class EventCollection : Dictionary<DateTime, ICollection>
+    public class EventCollection : Dictionary<DateTime, DayEventCollection>
     {
         #region ctor
 
@@ -53,7 +55,7 @@ namespace Xamarin.Plugin.Calendar.Models
         /// </summary>
         /// <param name="key">Event DateTime</param>
         /// <param name="value">Collection of events for date</param>
-        public new void Add(DateTime key, ICollection value)
+        public new void Add(DateTime key, DayEventCollection value)
         {
             base.Add(key.Date, value);
             CollectionChanged?.Invoke(this, new EventCollectionChangedArgs { Item = key.Date, Type = EventCollectionChangedType.Add });
@@ -64,7 +66,7 @@ namespace Xamarin.Plugin.Calendar.Models
         /// </summary>
         /// <param name="key">Event DateTime</param>
         /// <returns>Collection of events for date</returns>
-        public new ICollection this[DateTime key]
+        public new DayEventCollection this[DateTime key]
         {
             get => base[key.Date];
             set
@@ -73,7 +75,7 @@ namespace Xamarin.Plugin.Calendar.Models
                 CollectionChanged?.Invoke(this, new EventCollectionChangedArgs { Item = key.Date, Type = EventCollectionChangedType.Set });
             }
         }
-        
+
         /// <summary>
         /// Checks if dictionary already has collection for specific date
         /// </summary>
@@ -90,11 +92,11 @@ namespace Xamarin.Plugin.Calendar.Models
         /// <param name="key">The date for the value to get</param>
         /// <param name="value">If the date exists then this is the associated collection; otherwise, it will be the default value of ICollection</param>
         /// <returns>true if dictionary contains an element with the specified date; otherwise false</returns>
-        public new bool TryGetValue(DateTime key, out ICollection value)
+        public new bool TryGetValue(DateTime key, out DayEventCollection value)
         {
             return base.TryGetValue(key.Date, out value);
         }
-        
+
         /// <summary>
         /// Removes all dates and collections
         /// </summary>
@@ -104,7 +106,7 @@ namespace Xamarin.Plugin.Calendar.Models
                 return;
 
             base.Clear();
-            CollectionChanged?.Invoke(this, new EventCollectionChangedArgs {Item = default(DateTime), Type = EventCollectionChangedType.Clear});
+            CollectionChanged?.Invoke(this, new EventCollectionChangedArgs { Item = default(DateTime), Type = EventCollectionChangedType.Clear });
         }
 
         internal event EventHandler<EventCollectionChangedArgs> CollectionChanged;

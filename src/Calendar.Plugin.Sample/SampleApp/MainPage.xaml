@@ -15,7 +15,6 @@
         VerticalOptions="FillAndExpand"
         HorizontalOptions="FillAndExpand"
         Events="{Binding Events}"
-        SpecialDays="{Binding SpecialDays}"
         Culture="{Binding Culture}"
         Month="{Binding Month}"
         Year="{Binding Year}"

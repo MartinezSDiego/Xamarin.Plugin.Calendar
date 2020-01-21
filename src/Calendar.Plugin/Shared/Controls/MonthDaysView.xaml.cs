@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Plugin.Calendar.Shared.Models;
 
 namespace Xamarin.Plugin.Calendar.Controls
 {
@@ -242,21 +243,6 @@ namespace Xamarin.Plugin.Calendar.Controls
             set => SetValue(DisabledDayColorProperty, value);
         }
 
-        /// <summary>
-        /// To paint with a diferent color each day
-        /// </summary>
-        public static readonly BindableProperty SpecialDaysProperty =
-          BindableProperty.Create(nameof(SpecialDays), typeof(Dictionary<DateTime, SpecialDayModel>), typeof(MonthDaysView), new Dictionary<DateTime, SpecialDayModel>());
-
-        /// <summary>
-        /// To paint with a diferent color each day
-        /// </summary>
-        public Dictionary<DateTime, SpecialDayModel> SpecialDays
-        {
-            get => (Dictionary<DateTime, SpecialDayModel>) GetValue(SpecialDaysProperty);
-            set => SetValue(SpecialDaysProperty, value);
-        }
-
         #endregion
 
         private readonly Dictionary<string, bool> _propertyChangedNotificationSupressions = new Dictionary<string, bool>();
@@ -353,14 +339,14 @@ namespace Xamarin.Plugin.Calendar.Controls
             foreach (var dayView in _dayViews)
             {
                 var dayModel = dayView.BindingContext as DayModel;
-                SpecialDays.TryGetValue(dayModel.Date, out SpecialDayModel daySpecialModel);
+                Events.TryGetValue(dayModel.Date, out DayEventCollection dayEvent);
 
                 dayModel.SelectedTextColor = SelectedDayTextColor;
                 dayModel.OtherMonthColor = OtherMonthDayColor;
                 dayModel.DeselectedTextColor = DeselectedDayTextColor;
                 dayModel.SelectedBackgroundColor = SelectedDayBackgroundColor;
-                dayModel.EventIndicatorColor = daySpecialModel?.EventIndicatorColor ?? EventIndicatorColor;
-                dayModel.EventIndicatorSelectedColor = daySpecialModel?.EventIndicatorColor ?? EventIndicatorSelectedColor;
+                dayModel.EventIndicatorColor = dayEvent?.EventIndicatorColor ?? EventIndicatorColor;
+                dayModel.EventIndicatorSelectedColor = dayEvent?.EventIndicatorColor ?? EventIndicatorSelectedColor;
                 dayModel.TodayOutlineColor = TodayOutlineColor;
                 dayModel.TodayFillColor = TodayFillColor;
                 dayModel.DisabledColor = DisabledDayColor;
@@ -450,15 +436,15 @@ namespace Xamarin.Plugin.Calendar.Controls
             {
                 var currentDate = monthStart.AddDays(addDays++);
                 var dayModel = dayView.BindingContext as DayModel;
-                SpecialDays.TryGetValue(currentDate.Date, out SpecialDayModel specialDay);
+                Events.TryGetValue(currentDate.Date, out DayEventCollection dayEvent);
 
                 dayModel.Date = currentDate.Date;
                 dayModel.IsThisMonth = currentDate.Month == Month;
                 dayModel.IsSelected = currentDate == SelectedDate.Date;
-                dayModel.HasEvents = Events.ContainsKey(currentDate);
+                dayModel.HasEvents = dayEvent?.DayEvents?.Count > 0;
                 dayModel.IsDisabled = currentDate < MinimumDate || currentDate > MaximumDate;
-                dayModel.EventIndicatorColor = specialDay?.EventIndicatorColor ?? dayModel.EventIndicatorColor;
-                dayModel.EventIndicatorSelectedColor = specialDay?.EventIndicatorColor ?? dayModel.EventIndicatorSelectedColor;
+                dayModel.EventIndicatorColor = dayEvent?.EventIndicatorColor ?? dayModel.EventIndicatorColor;
+                dayModel.EventIndicatorSelectedColor = dayEvent?.EventIndicatorColor ?? dayModel.EventIndicatorSelectedColor;
 
                 if (dayModel.IsSelected)
                     _selectedDay = dayModel;
