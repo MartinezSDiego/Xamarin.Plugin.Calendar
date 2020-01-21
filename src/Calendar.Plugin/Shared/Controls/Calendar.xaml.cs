@@ -418,6 +418,15 @@ namespace Xamarin.Plugin.Calendar.Controls
             set => SetValue(DisabledDayColorProperty, value);
         }
 
+        public static readonly BindableProperty SpecialDaysProperty =
+            BindableProperty.Create(nameof(SpecialDays), typeof(Dictionary<DateTime, SpecialDayModel>), typeof(Calendar), new Dictionary<DateTime, SpecialDayModel>());
+
+        public Dictionary<DateTime, SpecialDayModel> SpecialDays
+        {
+            get => (Dictionary<DateTime, SpecialDayModel>) GetValue(SpecialDaysProperty);
+            set => SetValue(SpecialDaysProperty, value);
+        }
+
         #endregion
 
         private const uint CalendarSectionAnimationRate = 16;
@@ -443,11 +452,17 @@ namespace Xamarin.Plugin.Calendar.Controls
             UpdateSelectedDateLabel();
             UpdateMonthLabel();
             UpdateEvents();
+            UpdateEventColors();
 
             _calendarSectionAnimateHide = new Animation(AnimateMonths, 1, 0);
             _calendarSectionAnimateShow = new Animation(AnimateMonths, 0, 1);
 
             calendarContainer.SizeChanged += OnCalendarContainerSizeChanged;
+        }
+
+        private void UpdateEventColors()
+        {
+            monthDaysView.UpdateDaysColors();
         }
 
         #region Properties

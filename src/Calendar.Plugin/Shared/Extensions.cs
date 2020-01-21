@@ -22,8 +22,8 @@ namespace Xamarin.Plugin.Calendar
                 return template.CreateContent();
             }
 
-            dataTemplate.SetValue(BindableObject.BindingContextProperty, itemModel);
-            return dataTemplate.CreateContent();
+            dataTemplate?.SetValue(BindableObject.BindingContextProperty, itemModel);
+            return dataTemplate?.CreateContent();
         }
     }
 }

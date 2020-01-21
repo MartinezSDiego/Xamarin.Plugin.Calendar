@@ -25,7 +25,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public int Month
         {
-            get => (int)GetValue(MonthProperty);
+            get => (int) GetValue(MonthProperty);
             set => SetValue(MonthProperty, value);
         }
 
@@ -35,7 +35,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public int Year
         {
-            get => (int)GetValue(YearProperty);
+            get => (int) GetValue(YearProperty);
             set => SetValue(YearProperty, value);
         }
 
@@ -45,7 +45,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public DateTime SelectedDate
         {
-            get => (DateTime)GetValue(SelectedDateProperty);
+            get => (DateTime) GetValue(SelectedDateProperty);
             set => SetValue(SelectedDateProperty, value);
         }
 
@@ -55,7 +55,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public CultureInfo Culture
         {
-            get => (CultureInfo)GetValue(CultureProperty);
+            get => (CultureInfo) GetValue(CultureProperty);
             set => SetValue(CultureProperty, value);
         }
 
@@ -65,7 +65,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public EventCollection Events
         {
-            get => (EventCollection)GetValue(EventsProperty);
+            get => (EventCollection) GetValue(EventsProperty);
             set => SetValue(EventsProperty, value);
         }
 
@@ -75,7 +75,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color DaysTitleColor
         {
-            get => (Color)GetValue(DaysTitleColorProperty);
+            get => (Color) GetValue(DaysTitleColorProperty);
             set => SetValue(DaysTitleColorProperty, value);
         }
 
@@ -85,7 +85,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color SelectedDayTextColor
         {
-            get => (Color)GetValue(SelectedDayTextColorProperty);
+            get => (Color) GetValue(SelectedDayTextColorProperty);
             set => SetValue(SelectedDayTextColorProperty, value);
         }
 
@@ -95,7 +95,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color DeselectedDayTextColor
         {
-            get => (Color)GetValue(DeselectedDayTextColorProperty);
+            get => (Color) GetValue(DeselectedDayTextColorProperty);
             set => SetValue(DeselectedDayTextColorProperty, value);
         }
 
@@ -105,7 +105,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color OtherMonthDayColor
         {
-            get => (Color)GetValue(OtherMonthDayColorProperty);
+            get => (Color) GetValue(OtherMonthDayColorProperty);
             set => SetValue(OtherMonthDayColorProperty, value);
         }
 
@@ -115,7 +115,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color SelectedDayBackgroundColor
         {
-            get => (Color)GetValue(SelectedDayBackgroundColorProperty);
+            get => (Color) GetValue(SelectedDayBackgroundColorProperty);
             set => SetValue(SelectedDayBackgroundColorProperty, value);
         }
 
@@ -125,7 +125,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color EventIndicatorColor
         {
-            get => (Color)GetValue(EventIndicatorColorProperty);
+            get => (Color) GetValue(EventIndicatorColorProperty);
             set => SetValue(EventIndicatorColorProperty, value);
         }
 
@@ -135,7 +135,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color EventIndicatorSelectedColor
         {
-            get => (Color)GetValue(EventIndicatorSelectedColorProperty);
+            get => (Color) GetValue(EventIndicatorSelectedColorProperty);
             set => SetValue(EventIndicatorSelectedColorProperty, value);
         }
 
@@ -145,7 +145,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color TodayOutlineColor
         {
-            get => (Color)GetValue(TodayOutlineColorProperty);
+            get => (Color) GetValue(TodayOutlineColorProperty);
             set => SetValue(TodayOutlineColorProperty, value);
         }
 
@@ -155,7 +155,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color TodayFillColor
         {
-            get => (Color)GetValue(TodayFillColorProperty);
+            get => (Color) GetValue(TodayFillColorProperty);
             set => SetValue(TodayFillColorProperty, value);
         }
 
@@ -165,7 +165,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public double DayViewSize
         {
-            get => (double)GetValue(DayViewSizeProperty);
+            get => (double) GetValue(DayViewSizeProperty);
             set => SetValue(DayViewSizeProperty, value);
         }
 
@@ -175,7 +175,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public float DayViewCornerRadius
         {
-            get => (float)GetValue(DayViewCornerRadiusProperty);
+            get => (float) GetValue(DayViewCornerRadiusProperty);
             set => SetValue(DayViewCornerRadiusProperty, value);
         }
 
@@ -185,7 +185,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public double DaysTitleHeight
         {
-            get => (double)GetValue(DaysTitleHeightProperty);
+            get => (double) GetValue(DaysTitleHeightProperty);
             set => SetValue(DaysTitleHeightProperty, value);
         }
 
@@ -195,7 +195,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Style DaysLabelStyle
         {
-            get => (Style)GetValue(DaysLabelStyleProperty);
+            get => (Style) GetValue(DaysLabelStyleProperty);
             set => SetValue(DaysLabelStyleProperty, value);
         }
 
@@ -205,7 +205,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Style DaysTitleLabelStyle
         {
-            get => (Style)GetValue(DaysTitleLabelStyleProperty);
+            get => (Style) GetValue(DaysTitleLabelStyleProperty);
             set => SetValue(DaysTitleLabelStyleProperty, value);
         }
 
@@ -216,7 +216,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Minimum date which can be selected </summary>
         public DateTime MinimumDate
         {
-            get => (DateTime)GetValue(MinimumDateProperty);
+            get => (DateTime) GetValue(MinimumDateProperty);
             set => SetValue(MinimumDateProperty, value);
         }
 
@@ -227,7 +227,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Maximum date which can be selected </summary>
         public DateTime MaximumDate
         {
-            get => (DateTime)GetValue(MaximumDateProperty);
+            get => (DateTime) GetValue(MaximumDateProperty);
             set => SetValue(MaximumDateProperty, value);
         }
 
@@ -238,8 +238,23 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Color for days which are out of MinimumDate - MaximumDate range </summary>
         public Color DisabledDayColor
         {
-            get => (Color)GetValue(DisabledDayColorProperty);
+            get => (Color) GetValue(DisabledDayColorProperty);
             set => SetValue(DisabledDayColorProperty, value);
+        }
+
+        /// <summary>
+        /// To paint with a diferent color each day
+        /// </summary>
+        public static readonly BindableProperty SpecialDaysProperty =
+          BindableProperty.Create(nameof(SpecialDays), typeof(Dictionary<DateTime, SpecialDayModel>), typeof(MonthDaysView), new Dictionary<DateTime, SpecialDayModel>());
+
+        /// <summary>
+        /// To paint with a diferent color each day
+        /// </summary>
+        public Dictionary<DateTime, SpecialDayModel> SpecialDays
+        {
+            get => (Dictionary<DateTime, SpecialDayModel>) GetValue(SpecialDaysProperty);
+            set => SetValue(SpecialDaysProperty, value);
         }
 
         #endregion
@@ -312,7 +327,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         private void UpdateDayTitles()
         {
-            var dayNumber = (int)Culture.DateTimeFormat.FirstDayOfWeek;
+            var dayNumber = (int) Culture.DateTimeFormat.FirstDayOfWeek;
 
             foreach (var dayLabel in daysTitleControl.Children.OfType<Label>())
             {
@@ -333,18 +348,19 @@ namespace Xamarin.Plugin.Calendar.Controls
                     () => UpdateDays());
         }
 
-        private void UpdateDaysColors()
+        internal void UpdateDaysColors()
         {
             foreach (var dayView in _dayViews)
             {
                 var dayModel = dayView.BindingContext as DayModel;
+                SpecialDays.TryGetValue(dayModel.Date, out SpecialDayModel daySpecialModel);
 
                 dayModel.SelectedTextColor = SelectedDayTextColor;
                 dayModel.OtherMonthColor = OtherMonthDayColor;
                 dayModel.DeselectedTextColor = DeselectedDayTextColor;
                 dayModel.SelectedBackgroundColor = SelectedDayBackgroundColor;
-                dayModel.EventIndicatorColor = EventIndicatorColor;
-                dayModel.EventIndicatorSelectedColor = EventIndicatorSelectedColor;
+                dayModel.EventIndicatorColor = daySpecialModel?.EventIndicatorColor ?? EventIndicatorColor;
+                dayModel.EventIndicatorSelectedColor = daySpecialModel?.EventIndicatorColor ?? EventIndicatorSelectedColor;
                 dayModel.TodayOutlineColor = TodayOutlineColor;
                 dayModel.TodayFillColor = TodayFillColor;
                 dayModel.DisabledColor = DisabledDayColor;
@@ -425,7 +441,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         private void LoadDays()
         {
             DateTime monthStart = new DateTime(Year, Month, 1);
-            var addDays = ((int)Culture.DateTimeFormat.FirstDayOfWeek) - (int)monthStart.DayOfWeek;
+            var addDays = ((int) Culture.DateTimeFormat.FirstDayOfWeek) - (int) monthStart.DayOfWeek;
 
             if (addDays > 0)
                 addDays -= 7;
@@ -434,12 +450,15 @@ namespace Xamarin.Plugin.Calendar.Controls
             {
                 var currentDate = monthStart.AddDays(addDays++);
                 var dayModel = dayView.BindingContext as DayModel;
+                SpecialDays.TryGetValue(currentDate.Date, out SpecialDayModel specialDay);
 
                 dayModel.Date = currentDate.Date;
                 dayModel.IsThisMonth = currentDate.Month == Month;
                 dayModel.IsSelected = currentDate == SelectedDate.Date;
                 dayModel.HasEvents = Events.ContainsKey(currentDate);
                 dayModel.IsDisabled = currentDate < MinimumDate || currentDate > MaximumDate;
+                dayModel.EventIndicatorColor = specialDay?.EventIndicatorColor ?? dayModel.EventIndicatorColor;
+                dayModel.EventIndicatorSelectedColor = specialDay?.EventIndicatorColor ?? dayModel.EventIndicatorSelectedColor;
 
                 if (dayModel.IsSelected)
                     _selectedDay = dayModel;

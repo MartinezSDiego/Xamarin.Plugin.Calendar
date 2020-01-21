@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
 namespace SampleApp
 {
@@ -14,6 +15,13 @@ namespace SampleApp
     {
         public MainPageViewModel()
         {
+            SpecialDays = new Dictionary<DateTime, SpecialDayModel>
+            {
+                [ DateTime.Now.AddDays(-1).Date] = new SpecialDayModel() { EventIndicatorColor = Color.Red },
+                [ DateTime.Now.AddDays(-2).Date] = new SpecialDayModel() { EventIndicatorColor = Color.Blue },
+                [ DateTime.Now.AddDays(-3).Date] = new SpecialDayModel() { EventIndicatorColor = Color.Brown }
+            };
+
             Culture = CultureInfo.CreateSpecificCulture("en-US");
 
             // testing all kinds of adding events
@@ -63,6 +71,8 @@ namespace SampleApp
                 Description = $"This is {name} event{x}'s description!"
             });
         }
+
+        public Dictionary<DateTime, SpecialDayModel> SpecialDays { get; }
 
         public EventCollection Events { get; }
         public int Month { get; set; } = DateTime.Now.Month;

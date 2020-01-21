@@ -1,7 +1,7 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/1.6.61">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;MonoAndroid80;MonoAndroid81;Xamarin.iOS10</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Authors>Josip Caleta</Authors>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <PackageId>Xamarin.Plugin.Calendar</PackageId>
@@ -99,6 +99,5 @@
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <Compile Include="iOS\*.cs" />
   </ItemGroup>
-
-
+  
 </Project>
