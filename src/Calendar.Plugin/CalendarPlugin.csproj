@@ -2,19 +2,19 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <Authors>Josip Caleta</Authors>
+    <Authors>Mayasoft Developers</Authors>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <PackageId>Xamarin.Plugin.Calendar</PackageId>
+    <PackageId>Xamarin.Plugin.Calendar.Mayasoft</PackageId>
     <PackageTags>events calendar, calendar, xamarin forms, custom calendar</PackageTags>
-    <PackageProjectUrl>https://github.com/lilcodelab/XamarinForms-Calendar</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/lilcodelab/XamarinForms-Calendar</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/MartinezSDiego/Xamarin.Plugin.Calendar</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MartinezSDiego/Xamarin.Plugin.Calendar</RepositoryUrl>
     <PackageReleaseNotes />
-    <Copyright>Copyright 2019 lilcodelab</Copyright>
-    <Company>lilcodelab</Company>
-    <Owners>lilcodelab</Owners>
-    <AssemblyVersion>1.0.0.4</AssemblyVersion>
-    <AssemblyFileVersion>1.0.0.4</AssemblyFileVersion>
-    <Version>1.0.0.4</Version>
+    <Copyright>Copyright 2020 Mayasoft</Copyright>
+    <Company>Mayasoft</Company>
+    <Owners>Mayasoft</Owners>
+    <AssemblyVersion>1.0.3.201</AssemblyVersion>
+    <AssemblyFileVersion>1.0.3.201</AssemblyFileVersion>
+    <Version>1.0.3.201</Version>
     <Description>Customized calendar plugin for Xamarin.Forms</Description>
     <Summary>Customized calendar plugin for Xamarin.Forms.</Summary>
     <PackOnBuild>true</PackOnBuild>

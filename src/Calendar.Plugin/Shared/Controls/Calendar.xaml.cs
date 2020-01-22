@@ -23,7 +23,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public bool ShowMonthPicker
         {
-            get => (bool)GetValue(ShowMonthPickerProperty);
+            get => (bool) GetValue(ShowMonthPickerProperty);
             set => SetValue(ShowMonthPickerProperty, value);
         }
 
@@ -32,7 +32,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public bool ShowYearPicker
         {
-            get => (bool)GetValue(ShowYearPickerProperty);
+            get => (bool) GetValue(ShowYearPickerProperty);
             set => SetValue(ShowYearPickerProperty, value);
         }
 
@@ -41,7 +41,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public int Month
         {
-            get => (int)GetValue(MonthProperty);
+            get => (int) GetValue(MonthProperty);
             set => SetValue(MonthProperty, value);
         }
 
@@ -50,7 +50,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public int Year
         {
-            get => (int)GetValue(YearProperty);
+            get => (int) GetValue(YearProperty);
             set => SetValue(YearProperty, value);
         }
 
@@ -59,7 +59,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public DateTime SelectedDate
         {
-            get => (DateTime)GetValue(SelectedDateProperty);
+            get => (DateTime) GetValue(SelectedDateProperty);
             set => SetValue(SelectedDateProperty, value);
         }
 
@@ -68,7 +68,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public CultureInfo Culture
         {
-            get => (CultureInfo)GetValue(CultureProperty);
+            get => (CultureInfo) GetValue(CultureProperty);
             set => SetValue(CultureProperty, value);
         }
 
@@ -77,7 +77,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public EventCollection Events
         {
-            get => (EventCollection)GetValue(EventsProperty);
+            get => (EventCollection) GetValue(EventsProperty);
             set => SetValue(EventsProperty, value);
         }
 
@@ -86,7 +86,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public ICollection SelectedDayEvents
         {
-            get => (ICollection)GetValue(SelectedDayEventsProperty);
+            get => (ICollection) GetValue(SelectedDayEventsProperty);
             set => SetValue(SelectedDayEventsProperty, value);
         }
 
@@ -95,7 +95,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public DataTemplate EventTemplate
         {
-            get => (DataTemplate)GetValue(EventTemplateProperty);
+            get => (DataTemplate) GetValue(EventTemplateProperty);
             set => SetValue(EventTemplateProperty, value);
         }
 
@@ -104,7 +104,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color MonthLabelColor
         {
-            get => (Color)GetValue(MonthLabelColorProperty);
+            get => (Color) GetValue(MonthLabelColorProperty);
             set => SetValue(MonthLabelColorProperty, value);
         }
 
@@ -113,7 +113,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color YearLabelColor
         {
-            get => (Color)GetValue(YearLabelColorProperty);
+            get => (Color) GetValue(YearLabelColorProperty);
             set => SetValue(YearLabelColorProperty, value);
         }
 
@@ -122,7 +122,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color SelectedDateColor
         {
-            get => (Color)GetValue(SelectedDateColorProperty);
+            get => (Color) GetValue(SelectedDateColorProperty);
             set => SetValue(SelectedDateColorProperty, value);
         }
 
@@ -131,7 +131,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color DaysTitleColor
         {
-            get => (Color)GetValue(DaysTitleColorProperty);
+            get => (Color) GetValue(DaysTitleColorProperty);
             set => SetValue(DaysTitleColorProperty, value);
         }
 
@@ -140,7 +140,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color SelectedDayTextColor
         {
-            get => (Color)GetValue(SelectedDayTextColorProperty);
+            get => (Color) GetValue(SelectedDayTextColorProperty);
             set => SetValue(SelectedDayTextColorProperty, value);
         }
 
@@ -149,7 +149,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color DeselectedDayTextColor
         {
-            get => (Color)GetValue(DeselectedDayTextColorProperty);
+            get => (Color) GetValue(DeselectedDayTextColorProperty);
             set => SetValue(DeselectedDayTextColorProperty, value);
         }
 
@@ -158,7 +158,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color OtherMonthDayColor
         {
-            get => (Color)GetValue(OtherMonthDayColorProperty);
+            get => (Color) GetValue(OtherMonthDayColorProperty);
             set => SetValue(OtherMonthDayColorProperty, value);
         }
 
@@ -167,7 +167,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color SelectedDayBackgroundColor
         {
-            get => (Color)GetValue(SelectedDayBackgroundColorProperty);
+            get => (Color) GetValue(SelectedDayBackgroundColorProperty);
             set => SetValue(SelectedDayBackgroundColorProperty, value);
         }
 
@@ -176,7 +176,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color EventIndicatorColor
         {
-            get => (Color)GetValue(EventIndicatorColorProperty);
+            get => (Color) GetValue(EventIndicatorColorProperty);
             set => SetValue(EventIndicatorColorProperty, value);
         }
 
@@ -185,7 +185,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color EventIndicatorSelectedColor
         {
-            get => (Color)GetValue(EventIndicatorSelectedColorProperty);
+            get => (Color) GetValue(EventIndicatorSelectedColorProperty);
             set => SetValue(EventIndicatorSelectedColorProperty, value);
         }
 
@@ -194,7 +194,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color ArrowsHeaderTextColor
         {
-            get => (Color)GetValue(ArrowsHeaderTextColorProperty);
+            get => (Color) GetValue(ArrowsHeaderTextColorProperty);
             set => SetValue(ArrowsHeaderTextColorProperty, value);
         }
 
@@ -294,7 +294,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color TodayOutlineColor
         {
-            get => (Color)GetValue(TodayOutlineColorProperty);
+            get => (Color) GetValue(TodayOutlineColorProperty);
             set => SetValue(TodayOutlineColorProperty, value);
         }
 
@@ -303,7 +303,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Color TodayFillColor
         {
-            get => (Color)GetValue(TodayFillColorProperty);
+            get => (Color) GetValue(TodayFillColorProperty);
             set => SetValue(TodayFillColorProperty, value);
         }
 
@@ -312,7 +312,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public DataTemplate HeaderSectionTemplate
         {
-            get => (DataTemplate)GetValue(HeaderSectionTemplateProperty);
+            get => (DataTemplate) GetValue(HeaderSectionTemplateProperty);
             set => SetValue(HeaderSectionTemplateProperty, value);
         }
 
@@ -321,7 +321,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public DataTemplate FooterSectionTemplate
         {
-            get => (DataTemplate)GetValue(FooterSectionTemplateProperty);
+            get => (DataTemplate) GetValue(FooterSectionTemplateProperty);
             set => SetValue(FooterSectionTemplateProperty, value);
         }
 
@@ -330,7 +330,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public string MonthText
         {
-            get => (string)GetValue(MonthTextProperty);
+            get => (string) GetValue(MonthTextProperty);
             set => SetValue(MonthTextProperty, value);
         }
 
@@ -339,7 +339,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public string SelectedDateText
         {
-            get => (string)GetValue(SelectedDateTextProperty);
+            get => (string) GetValue(SelectedDateTextProperty);
             set => SetValue(SelectedDateTextProperty, value);
         }
 
@@ -348,7 +348,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public string SelectedDateTextFormat
         {
-            get => (string)GetValue(SelectedDateTextFormatProperty);
+            get => (string) GetValue(SelectedDateTextFormatProperty);
             set => SetValue(SelectedDateTextFormatProperty, value);
         }
 
@@ -357,7 +357,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public bool CalendarSectionShown
         {
-            get => (bool)GetValue(CalendarSectionShownProperty);
+            get => (bool) GetValue(CalendarSectionShownProperty);
             set => SetValue(CalendarSectionShownProperty, value);
         }
 
@@ -366,7 +366,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public double DayViewSize
         {
-            get => (double)GetValue(DayViewSizeProperty);
+            get => (double) GetValue(DayViewSizeProperty);
             set => SetValue(DayViewSizeProperty, value);
         }
 
@@ -375,7 +375,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public float DayViewCornerRadius
         {
-            get => (float)GetValue(DayViewCornerRadiusProperty);
+            get => (float) GetValue(DayViewCornerRadiusProperty);
             set => SetValue(DayViewCornerRadiusProperty, value);
         }
 
@@ -384,7 +384,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public double DaysTitleHeight
         {
-            get => (double)GetValue(DaysTitleHeightProperty);
+            get => (double) GetValue(DaysTitleHeightProperty);
             set => SetValue(DaysTitleHeightProperty, value);
         }
 
@@ -393,7 +393,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Style DaysLabelStyle
         {
-            get => (Style)GetValue(DaysLabelStyleProperty);
+            get => (Style) GetValue(DaysLabelStyleProperty);
             set => SetValue(DaysLabelStyleProperty, value);
         }
 
@@ -402,7 +402,7 @@ namespace Xamarin.Plugin.Calendar.Controls
 
         public Style DaysTitleLabelStyle
         {
-            get => (Style)GetValue(DaysTitleLabelStyleProperty);
+            get => (Style) GetValue(DaysTitleLabelStyleProperty);
             set => SetValue(DaysTitleLabelStyleProperty, value);
         }
 
@@ -417,7 +417,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// </summary>
         public bool DisableSwipeDetection
         {
-            get => (bool)GetValue(DisableSwipeDetectionProperty);
+            get => (bool) GetValue(DisableSwipeDetectionProperty);
             set => SetValue(DisableSwipeDetectionProperty, value);
         }
 
@@ -428,7 +428,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Activated when user swipes-up over days view </summary>
         public ICommand SwipeUpCommand
         {
-            get => (ICommand)GetValue(SwipeUpCommandProperty);
+            get => (ICommand) GetValue(SwipeUpCommandProperty);
             set => SetValue(SwipeUpCommandProperty, value);
         }
 
@@ -439,7 +439,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Enable/disable default swipe-up action for showing/hiding calendar </summary>
         public bool SwipeUpToHideEnabled
         {
-            get => (bool)GetValue(SwipeUpToHideEnabledProperty);
+            get => (bool) GetValue(SwipeUpToHideEnabledProperty);
             set => SetValue(SwipeUpToHideEnabledProperty, value);
         }
 
@@ -450,7 +450,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Activated when user swipes-left over days view </summary>
         public ICommand SwipeLeftCommand
         {
-            get => (ICommand)GetValue(SwipeLeftCommandProperty);
+            get => (ICommand) GetValue(SwipeLeftCommandProperty);
             set => SetValue(SwipeLeftCommandProperty, value);
         }
 
@@ -461,7 +461,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Activated when user swipes-right over days view </summary>
         public ICommand SwipeRightCommand
         {
-            get => (ICommand)GetValue(SwipeRightCommandProperty);
+            get => (ICommand) GetValue(SwipeRightCommandProperty);
             set => SetValue(SwipeRightCommandProperty, value);
         }
 
@@ -472,7 +472,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Enable/disable default swipe actions for changing months </summary>
         public bool SwipeToChangeMonthEnabled
         {
-            get => (bool)GetValue(SwipeToChangeMonthEnabledProperty);
+            get => (bool) GetValue(SwipeToChangeMonthEnabledProperty);
             set => SetValue(SwipeToChangeMonthEnabledProperty, value);
         }
 
@@ -483,7 +483,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Minimum date which can be selected </summary>
         public DateTime MinimumDate
         {
-            get => (DateTime)GetValue(MinimumDateProperty);
+            get => (DateTime) GetValue(MinimumDateProperty);
             set => SetValue(MinimumDateProperty, value);
         }
 
@@ -494,7 +494,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Maximum date which can be selected </summary>
         public DateTime MaximumDate
         {
-            get => (DateTime)GetValue(MaximumDateProperty);
+            get => (DateTime) GetValue(MaximumDateProperty);
             set => SetValue(MaximumDateProperty, value);
         }
 
@@ -505,7 +505,7 @@ namespace Xamarin.Plugin.Calendar.Controls
         /// <summary> Color for days which are out of MinimumDate - MaximumDate range </summary>
         public Color DisabledDayColor
         {
-            get => (Color)GetValue(DisabledDayColorProperty);
+            get => (Color) GetValue(DisabledDayColorProperty);
             set => SetValue(DisabledDayColorProperty, value);
         }
 
@@ -798,6 +798,14 @@ namespace Xamarin.Plugin.Calendar.Controls
         }
 
         #endregion
+
+        public static readonly BindableProperty TappedActionDayProperty =
+        BindableProperty.Create(nameof(TappedActionDay), typeof(Action<DateTime>), typeof(Calendar));
+        public Action<DateTime> TappedActionDay
+        {
+            get => (Action<DateTime>) GetValue(TappedActionDayProperty);
+            set => SetValue(TappedActionDayProperty, value);
+        }
 
     }
 }

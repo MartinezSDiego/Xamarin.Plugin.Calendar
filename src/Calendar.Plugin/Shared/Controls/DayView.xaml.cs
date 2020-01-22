@@ -62,7 +62,18 @@ namespace Xamarin.Plugin.Calendar.Controls
         private void OnTapped(object sender, EventArgs e)
         {
             if (BindingContext is DayModel dayModel && !dayModel.IsDisabled)
+            {
                 dayModel.IsSelected = true;
+                TappedActionDay?.Invoke(dayModel.Date);
+            }
+        }
+
+        public static readonly BindableProperty TappedActionDayProperty =
+        BindableProperty.Create(nameof(TappedActionDay), typeof(Action<DateTime>), typeof(Calendar));
+        public Action<DateTime> TappedActionDay
+        {
+            get => (Action<DateTime>) GetValue(TappedActionDayProperty);
+            set => SetValue(TappedActionDayProperty, value);
         }
     }
 }

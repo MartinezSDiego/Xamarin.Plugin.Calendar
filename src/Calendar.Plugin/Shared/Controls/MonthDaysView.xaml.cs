@@ -484,5 +484,13 @@ namespace Xamarin.Plugin.Calendar.Controls
 
             _propertyChangedNotificationSupressions[propertyName] = false;
         }
+
+        public static readonly BindableProperty TappedActionDayProperty =
+        BindableProperty.Create(nameof(TappedActionDay), typeof(Action<DateTime>), typeof(Calendar));
+        public Action<DateTime> TappedActionDay
+        {
+            get => (Action<DateTime>) GetValue(TappedActionDayProperty);
+            set => SetValue(TappedActionDayProperty, value);
+        }
     }
 }

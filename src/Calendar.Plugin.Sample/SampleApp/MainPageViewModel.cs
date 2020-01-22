@@ -9,13 +9,20 @@ using System.Linq;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Plugin.Calendar.Shared.Models;
+using Xamarin.Plugin.Calendar.Controls;
 
 namespace SampleApp
 {
     public class MainPageViewModel : INotifyPropertyChanged
     {
+        public bool isBusy = false;
         public MainPageViewModel()
         {
+            TappedActionDay = new Action<DateTime>((DateTime date) =>
+            {
+                System.Diagnostics.Debug.WriteLine("Pressed");
+            });
+
             Culture = CultureInfo.CreateSpecificCulture("en-US");
 
             // testing all kinds of adding events
@@ -35,7 +42,7 @@ namespace SampleApp
                 DayEvents = new List<EventModel>(GenerateEvents(5, "Cool")),
                 EventIndicatorColor = Color.Red
             });
-            
+
             // with indexer
             Events[DateTime.Now] = new DayEventCollection()
             {
@@ -46,7 +53,7 @@ namespace SampleApp
             Task.Delay(5000).ContinueWith(_ =>
             {
                 // indexer - update later
-                Events[DateTime.Now] = new DayEventCollection() 
+                Events[DateTime.Now] = new DayEventCollection()
                 {
                     DayEvents = new ObservableCollection<EventModel>(GenerateEvents(10, "Cool")),
                     EventIndicatorColor = Color.Brown
@@ -93,6 +100,8 @@ namespace SampleApp
                 Description = $"This is {name} event{x}'s description!"
             });
         }
+
+        public Action<DateTime> TappedActionDay { get; set; }
 
         public EventCollection Events { get; }
         public int Month { get; set; } = DateTime.Now.Month;
