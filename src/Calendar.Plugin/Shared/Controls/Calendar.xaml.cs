@@ -253,6 +253,15 @@ namespace Xamarin.Plugin.Calendar.Controls
             set => SetValue(ArrowsFontFamilyProperty, value);
         }
 
+        public static readonly BindableProperty ArrowsHasShadowProperty =
+          BindableProperty.Create(nameof(ArrowsHasShadow), typeof(bool), typeof(Calendar), true);
+
+        public bool ArrowsHasShadow
+        {
+            get => (bool)GetValue(ArrowsHasShadowProperty);
+            set => SetValue(ArrowsHasShadowProperty, value);
+        }
+
         public static readonly BindableProperty ArrowLeftTextProperty =
           BindableProperty.Create(nameof(ArrowLeftText), typeof(string), typeof(Calendar), "←");
 

@@ -18,6 +18,7 @@
         Culture="{Binding Culture}"
         Month="{Binding Month}"
         Year="{Binding Year}"
+        ArrowsHasShadow="False"
         TappedActionDay="{Binding TappedActionDay}"
         SelectedDate="{Binding SelectedDate}"
         MinimumDate="{Binding MinimumDate}"
