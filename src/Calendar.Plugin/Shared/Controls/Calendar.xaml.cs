@@ -198,6 +198,51 @@ namespace Xamarin.Plugin.Calendar.Controls
             set => SetValue(ArrowsColorProperty, value);
         }
 
+        public static readonly BindableProperty ArrowsFontFamilyProperty =
+          BindableProperty.Create(nameof(ArrowsFontFamily), typeof(string), typeof(Calendar), string.Empty);
+
+        public string ArrowsFontFamily
+        {
+            get => (string) GetValue(ArrowsFontFamilyProperty);
+            set => SetValue(ArrowsFontFamilyProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowLeftTextProperty =
+          BindableProperty.Create(nameof(ArrowLeftText), typeof(string), typeof(Calendar), "←");
+
+        public string ArrowLeftText
+        {
+            get => (string) GetValue(ArrowLeftTextProperty);
+            set => SetValue(ArrowLeftTextProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowRightTextProperty =
+          BindableProperty.Create(nameof(ArrowRightText), typeof(string), typeof(Calendar), "→");
+
+        public string ArrowRightText
+        {
+            get => (string) GetValue(ArrowRightTextProperty);
+            set => SetValue(ArrowRightTextProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowUpTextProperty =
+          BindableProperty.Create(nameof(ArrowUpText), typeof(string), typeof(Calendar), "↑");
+
+        public string ArrowUpText
+        {
+            get => (string) GetValue(ArrowUpTextProperty);
+            set => SetValue(ArrowUpTextProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowDownTextProperty =
+          BindableProperty.Create(nameof(ArrowDownText), typeof(string), typeof(Calendar), "↓");
+
+        public string ArrowDownText
+        {
+            get => (string) GetValue(ArrowDownTextProperty);
+            set => SetValue(ArrowDownTextProperty, value);
+        }
+
         public static readonly BindableProperty TodayOutlineColorProperty =
           BindableProperty.Create(nameof(TodayOutlineColor), typeof(Color), typeof(Calendar), Color.FromHex("#FF4081"));
 

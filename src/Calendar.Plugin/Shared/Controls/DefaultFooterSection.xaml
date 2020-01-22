@@ -23,7 +23,8 @@
             Grid.Column="1"
             x:Name="showHideLabel"
             Margin="0,0,15,0"
-            Text="↑"
+            Text="{Binding ArrowUpText}"
+            FontFamily="{Binding ArrowsFontFamily}"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="End"
             VerticalTextAlignment="Center"
@@ -35,7 +36,7 @@
                     TargetType="Label"
                     Binding="{Binding CalendarSectionShown}"
                     Value="False">
-                    <Setter Property="Text" Value="↓" />
+                    <Setter Property="Text" Value="{Binding ArrowDownText}" />
                 </DataTrigger>
             </Label.Triggers>
         </Label>
