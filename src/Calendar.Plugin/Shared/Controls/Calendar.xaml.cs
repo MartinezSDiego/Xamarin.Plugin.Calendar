@@ -189,13 +189,59 @@ namespace Xamarin.Plugin.Calendar.Controls
             set => SetValue(EventIndicatorSelectedColorProperty, value);
         }
 
-        public static readonly BindableProperty ArrowsColorProperty =
-          BindableProperty.Create(nameof(ArrowsColor), typeof(Color), typeof(Calendar), Color.Default);
+        public static readonly BindableProperty ArrowsHeaderTextColorProperty =
+          BindableProperty.Create(nameof(ArrowsHeaderTextColor), typeof(Color), typeof(Calendar), Color.FromHex("#2196F3"));
 
-        public Color ArrowsColor
+        public Color ArrowsHeaderTextColor
         {
-            get => (Color)GetValue(ArrowsColorProperty);
-            set => SetValue(ArrowsColorProperty, value);
+            get => (Color)GetValue(ArrowsHeaderTextColorProperty);
+            set => SetValue(ArrowsHeaderTextColorProperty, value);
+        }
+
+
+        public static readonly BindableProperty ArrowsFooterTextColorProperty =
+          BindableProperty.Create(nameof(ArrowsFooterTextColor), typeof(Color), typeof(Calendar), Color.FromHex("#2196F3"));
+
+        public Color ArrowsFooterTextColor
+        {
+            get => (Color) GetValue(ArrowsFooterTextColorProperty);
+            set => SetValue(ArrowsFooterTextColorProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowsHeaderFontSizeProperty =
+          BindableProperty.Create(nameof(ArrowsHeaderFontSize), typeof(double), typeof(Calendar), Device.GetNamedSize(NamedSize.Medium, typeof(Label)));
+
+        public double ArrowsHeaderFontSize
+        {
+            get => (double) GetValue(ArrowsHeaderFontSizeProperty);
+            set => SetValue(ArrowsHeaderFontSizeProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowsFooterFontSizeProperty =
+          BindableProperty.Create(nameof(ArrowsFooterFontSize), typeof(double), typeof(Calendar), Device.GetNamedSize(NamedSize.Medium, typeof(Label)));
+
+        public double ArrowsFooterFontSize
+        {
+            get => (double) GetValue(ArrowsFooterFontSizeProperty);
+            set => SetValue(ArrowsFooterFontSizeProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowsHeaderBackgroundColorProperty =
+          BindableProperty.Create(nameof(ArrowsHeaderBackgroundColor), typeof(Color), typeof(Calendar), Color.White);
+
+        public Color ArrowsHeaderBackgroundColor
+        {
+            get => (Color) GetValue(ArrowsHeaderBackgroundColorProperty);
+            set => SetValue(ArrowsHeaderBackgroundColorProperty, value);
+        }
+
+        public static readonly BindableProperty ArrowsHeaderBorderColorProperty =
+          BindableProperty.Create(nameof(ArrowsHeaderBorderColor), typeof(Color), typeof(Calendar), Color.White);
+
+        public Color ArrowsHeaderBorderColor
+        {
+            get => (Color) GetValue(ArrowsHeaderBorderColorProperty);
+            set => SetValue(ArrowsHeaderBorderColorProperty, value);
         }
 
         public static readonly BindableProperty ArrowsFontFamilyProperty =

@@ -43,6 +43,15 @@ namespace Xamarin.Plugin.Calendar.Controls
             set => SetValue(DaysLabelStyleProperty, value);
         }
 
+        public static readonly BindableProperty DotBorderColorProperty =
+          BindableProperty.Create(nameof(DotBorderColor), typeof(Color), typeof(DayView), Color.Transparent);
+
+        public Color DotBorderColor
+        {
+            get => (Color) GetValue(DotBorderColorProperty);
+            set => SetValue(DotBorderColorProperty, value);
+        }
+
         #endregion
 
         internal DayView()
