@@ -12,9 +12,9 @@
     <Copyright>Copyright 2020 Mayasoft</Copyright>
     <Company>Mayasoft</Company>
     <Owners>Mayasoft</Owners>
-    <AssemblyVersion>1.0.3.201</AssemblyVersion>
-    <AssemblyFileVersion>1.0.3.201</AssemblyFileVersion>
-    <Version>1.0.3.201</Version>
+    <AssemblyVersion>1.0.3.202</AssemblyVersion>
+    <AssemblyFileVersion>1.0.3.202</AssemblyFileVersion>
+    <Version>1.0.3.202</Version>
     <Description>Customized calendar plugin for Xamarin.Forms</Description>
     <Summary>Customized calendar plugin for Xamarin.Forms.</Summary>
     <PackOnBuild>true</PackOnBuild>
